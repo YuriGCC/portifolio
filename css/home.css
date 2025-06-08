@@ -1,0 +1,66 @@
+.mainContainer {
+  height: 400px;
+}
+
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainMessage {
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  white-space: pre-wrap;
+}
+
+#tecWord {
+  position: relative;
+  right: 125px;
+}
+
+#evolutionWord {
+  position: relative;
+  left: 125px;
+}
+
+#feather {
+  width: 25vh;
+  height: 25vh;
+  position: absolute;
+  animation-name: movingFeather;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+#tecWord {
+    position: relative;
+    right: 125px;
+    color: black;
+}
+
+#evoWord {
+    position: relative;
+    left: 125px;
+    color: black;
+}
+
+@keyframes movingFeather {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

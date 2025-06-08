@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    color: white;
+}
+
+.contentArea {
+    text-align: justify;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 20px;
+}
+
+.headerContainer {
+    position: sticky;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerContainer ul {
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid: auto auto / auto auto auto auto; 
+    grid-gap: 10px; 
+    width: 100%;
+    align-items: center;
+}
+
+.headerContainer header ul li {
+    list-style: none;
+    margin: 0 15px 0 15px;
+}
+
+.headerContainer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s ease-in-out;
+    transition: border 0.5s ease;
+    position: relative;
+    padding: 15px;
+    border: none;
+}
+
+.headerContainer header ul li a::before,
+.headerContainer header ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255) 5px,
+      transparent 5px,
+      transparent 10px
+    );
+    background-position: 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.headerContainer header ul li a::before {
+    left: 0;
+}
+.headerContainer header ul li a::after {
+    right: 0;
+}
+
+
+.headerContainer header ul li a:hover::before,
+.headerContainer header ul li a:hover::after {
+    opacity: 1;
+    animation: scrollBorder 1s linear infinite;
+}
+
+@keyframes scrollBorder {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 10px;
+    }
+  }
+
+.headerSocialMedia {
+    position: relative;
+    display: flex;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.img:hover {
+    padding: 5px;
+    transition: 0.5s;
+    filter:invert();
+}
+
+
+.underConstruction {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(43, 42, 42);
+    overflow: hidden;
+}
+
+.underConstruction iframe {
+    width: 100vw;
+    height: 100%;
+}
