@@ -38,23 +38,23 @@ export function initBackground() {
         function getPieceFormat(type) {
             switch (type) {
                 case 1:
-                    return '/assets/svgs/piece_type1.svg';
+                    return '../assets/svgs/piece_type1.svg';
                 case 2:
-                    return '/assets/svgs/piece_type2.svg';
+                    return '../assets/svgs/piece_type2.svg';
                 case 3:
-                    return '/assets/svgs/piece_type3.svg';
+                    return '../assets/svgs/piece_type3.svg';
                 case 4:
-                    return '/assets/svgs/piece_type4.svg';
+                    return '../assets/svgs/piece_type4.svg';
                 case 5:
-                    return '/assets/svgs/piece_type5.svg';
+                    return '../assets/svgs/piece_type5.svg';
                 case 6:
-                    return '/assets/svgs/piece_type6.svg';
+                    return '../assets/svgs/piece_type6.svg';
                 case 7:
-                    return '/assets/svgs/piece_type7.svg';
+                    return '../assets/svgs/piece_type7.svg';
                 case 8:
-                    return '/assets/svgs/piece_type8.svg';
+                    return '../assets/svgs/piece_type8.svg';
                 default:
-                    return '/assets/svgs/piece_type1.svg';
+                    return '../assets/svgs/piece_type1.svg';
             }
         }
 
