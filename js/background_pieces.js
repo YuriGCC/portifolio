@@ -1,4 +1,4 @@
-export function initBackground() {
+function initBackground() {
     document.addEventListener('DOMContentLoaded', () => {
         const container = document.querySelector('.puzzle-container');
         let pieceCount = 0;
