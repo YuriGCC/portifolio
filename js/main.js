@@ -1,5 +1,3 @@
-import { initBackground } from './background_pieces.js';
-initBackground();
 window.addEventListener('load',() => {
   function writeAnimation(element, html, speed = 50) {
     let i = 0;
